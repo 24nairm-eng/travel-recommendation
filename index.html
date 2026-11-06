@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>TravelBloom</title>
+  <meta name="description" content="TravelBloom recommends beaches, temples and cities around the world. Search a keyword to get ideas for your next trip.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=DM+Mono:wght@400;500&family=Figtree:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="travel_recommendation.css">
+</head>
+<body>
+
+  <!-- Navigation bar: Home, About Us, Contact Us, search input, Search and Clear buttons -->
+  <nav class="navbar" aria-label="Main">
+    <div class="wrap">
+      <a class="logo" href="index.html">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#1b6a82"/><path d="M16 6c3 4 3 8 0 10-3-2-3-6 0-10zM6 16c4-3 8-3 10 0-2 3-6 3-10 0zM26 16c-4 3-8 3-10 0 2-3 6-3 10 0zM16 26c-3-4-3-8 0-10 3 2 3 6 0 10z" fill="#f2a93b"/></svg>
+        TravelBloom
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <form class="search-form" id="searchForm" role="search">
+        <label for="searchInput" class="visually-hidden">Search destinations</label>
+        <input type="text" id="searchInput" name="search" placeholder="Enter a destination or keyword" autocomplete="off">
+        <button type="submit" id="btnSearch" class="btn btn-primary">Search</button>
+        <button type="button" id="btnClear" class="btn btn-ghost">Clear</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Home page: introduction and search results -->
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-text">
+        <p class="eyebrow">Travel recommendations</p>
+        <h1>Explore dream destinations</h1>
+        <p class="lead">TravelBloom helps you find your next trip. Search for <strong>beach</strong>, <strong>temple</strong> or <strong>country</strong> and we will recommend places to visit, with a picture, a short description, the current local time and the nearest airport for each one.</p>
+        <div class="hero-actions">
+          <a class="btn btn-sun" href="contact.html">Book Now</a>
+          <a class="btn btn-on-dark" href="about.html">Meet our team</a>
+        </div>
+      </div>
+
+      <section id="results" class="results" aria-live="polite" hidden>
+        <div class="results-head">
+          <h2 id="resultsTitle">Recommendations</h2>
+          <span id="resultsCount"></span>
+        </div>
+        <div id="resultsList" class="results-list"></div>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <section class="band">
+      <div class="wrap">
+        <h2>What you can search for</h2>
+        <p class="intro">Type a keyword in the search bar, or pick one of these to get started. You can also search a country name such as Japan or Brazil.</p>
+        <div class="tiles">
+          <button class="tile" type="button" data-keyword="beach">
+            <img src="images/borabora.svg" alt="Illustration of overwater bungalows on a turquoise lagoon">
+            <div><h3>Beaches</h3><p>Lagoons, crescent bays and cliff-framed coves.</p></div>
+          </button>
+          <button class="tile" type="button" data-keyword="temple">
+            <img src="images/angkor.svg" alt="Illustration of Angkor Wat at sunrise">
+            <div><h3>Temples</h3><p>Ancient monuments and sacred sites.</p></div>
+          </button>
+          <button class="tile" type="button" data-keyword="country">
+            <img src="images/kyoto.svg" alt="Illustration of a pagoda and torii gate in Kyoto">
+            <div><h3>Countries</h3><p>Two standout cities in each country.</p></div>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span>&copy; 2026 TravelBloom. All rights reserved.</span>
+      <span><a href="about.html">About Us</a> &middot; <a href="contact.html">Contact Us</a></span>
+    </div>
+  </footer>
+
+  <script src="travel_recommendation.js"></script>
+</body>
+</html>

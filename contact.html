@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Contact Us | TravelBloom</title>
+  <meta name="description" content="Contact TravelBloom by email, phone or the contact form.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=DM+Mono:wght@400;500&family=Figtree:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="travel_recommendation.css">
+</head>
+<body>
+
+  <nav class="navbar" aria-label="Main">
+    <div class="wrap">
+      <a class="logo" href="index.html">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#1b6a82"/><path d="M16 6c3 4 3 8 0 10-3-2-3-6 0-10zM6 16c4-3 8-3 10 0-2 3-6 3-10 0zM26 16c-4 3-8 3-10 0 2-3 6-3 10 0zM16 26c-3-4-3-8 0-10 3 2 3 6 0 10z" fill="#f2a93b"/></svg>
+        TravelBloom
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Contact Us</p>
+      <h1>Plan your trip with us</h1>
+      <p>Questions about a destination, or ready to book? Send us a message and our team will reply within 24 hours.</p>
+    </div>
+  </header>
+
+  <main class="band">
+    <div class="wrap two-col">
+
+      <!-- Contact information -->
+      <section class="contact-info" aria-labelledby="infoTitle">
+        <h2 id="infoTitle">Contact information</h2>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          <div><h3>Email</h3><p><a id="contactEmail" href="mailto:contact@travelbloom.example">contact@travelbloom.example</a></p></div>
+        </div>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>
+          <div><h3>Phone</h3><p>+1 (555) 010-2026</p></div>
+        </div>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.5-7-12a7 7 0 0114 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <div><h3>Office</h3><p>TravelBloom, 12 Harbour Road, Suite 4</p></div>
+        </div>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div><h3>Opening hours</h3><p>Monday to Friday, 9:00 to 18:00</p></div>
+        </div>
+      </section>
+
+      <!-- Contact form: sends the message through the visitor's email app -->
+      <form class="contact-form" id="contactForm" action="mailto:contact@travelbloom.example" method="post" enctype="text/plain">
+        <h2>Send us a message</h2>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Where would you like to go, and when?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <p class="form-status" id="formStatus" aria-live="polite"></p>
+      </form>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span>&copy; 2026 TravelBloom. All rights reserved.</span>
+      <span><a href="index.html">Home</a> &middot; <a href="about.html">About Us</a></span>
+    </div>
+  </footer>
+
+  <script src="travel_recommendation.js"></script>
+</body>
+</html>

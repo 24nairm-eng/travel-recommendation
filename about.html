@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>About Us | TravelBloom</title>
+  <meta name="description" content="About TravelBloom: who we are, what we do, our team and our guidelines for team members.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=DM+Mono:wght@400;500&family=Figtree:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="travel_recommendation.css">
+</head>
+<body>
+
+  <nav class="navbar" aria-label="Main">
+    <div class="wrap">
+      <a class="logo" href="index.html">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#1b6a82"/><path d="M16 6c3 4 3 8 0 10-3-2-3-6 0-10zM6 16c4-3 8-3 10 0-2 3-6 3-10 0zM26 16c-4 3-8 3-10 0 2-3 6-3 10 0zM16 26c-3-4-3-8 0-10 3 2 3 6 0 10z" fill="#f2a93b"/></svg>
+        TravelBloom
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">About Us</p>
+      <h1>We turn travel ideas into real trips</h1>
+      <p>TravelBloom is a travel recommendation company that helps people discover beaches, temples and cities around the world and plan their visit with confidence.</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- Company information -->
+    <section class="band">
+      <div class="wrap two-col">
+        <div>
+          <h2>Who we are</h2>
+          <p>TravelBloom started with a simple idea: choosing where to go should be the most exciting part of a trip, not the most stressful. We gather the essentials for each destination in one place: what makes it special, what the local time is right now, and which airport to fly into.</p>
+          <p>Our recommendations cover three kinds of travel: relaxing <strong>beach</strong> holidays, cultural <strong>temple</strong> visits, and city breaks across different <strong>countries</strong>. Every destination is reviewed by our team before it appears on the site.</p>
+          <div class="facts">
+            <div class="fact"><strong>12</strong><span>destinations reviewed</span></div>
+            <div class="fact"><strong>8</strong><span>countries and territories</span></div>
+            <div class="fact"><strong>24 h</strong><span>reply time to every message</span></div>
+          </div>
+        </div>
+        <div>
+          <h2>Our mission</h2>
+          <p>To make trip planning simple, honest and inspiring for every traveller.</p>
+          <h2 style="margin-top: 28px;">What we offer</h2>
+          <ul>
+            <li>Personalised destination recommendations from a single keyword search</li>
+            <li>Clear descriptions, local times and nearest airports for every place</li>
+            <li>Help with booking through our Contact Us page</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team members -->
+    <section class="band" style="padding-top: 0;">
+      <div class="wrap">
+        <h2>Our team</h2>
+        <p class="intro">The people who research destinations and answer your questions.</p>
+        <div class="team">
+          <article class="member">
+            <div class="avatar" aria-hidden="true">AR</div>
+            <h3>Ananya Rao</h3>
+            <span class="role">CEO</span>
+            <p>Sets the company's direction and makes sure every recommendation meets our quality standard.</p>
+          </article>
+          <article class="member">
+            <div class="avatar" aria-hidden="true">DK</div>
+            <h3>Daniel Kim</h3>
+            <span class="role">Team Lead</span>
+            <p>Leads destination research and keeps the recommendation data accurate and up to date.</p>
+          </article>
+          <article class="member">
+            <div class="avatar" aria-hidden="true">MI</div>
+            <h3>Meera Iyer</h3>
+            <span class="role">Delivery Head</span>
+            <p>Handles customer requests and bookings, and makes sure every message gets a reply.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guidance / instructions for team members -->
+    <section class="band" style="padding-top: 0;">
+      <div class="wrap">
+        <h2>Guidelines for team members</h2>
+        <p class="intro">Every TravelBloom team member follows these instructions when working on the website and with customers.</p>
+        <div class="guidelines">
+          <ol>
+            <li><strong>Reply within 24 hours.</strong> Answer every message from the Contact Us form within one working day.</li>
+            <li><strong>Check facts before publishing.</strong> Verify each destination's description, time zone and nearest airport from at least two reliable sources.</li>
+            <li><strong>Update the data file, not the pages.</strong> Add or change destinations in <code>travel_recommendation_api.json</code>, then test the search for beach, temple and country.</li>
+            <li><strong>Use the right images.</strong> Use only images we own or have permission to use, and give each one a clear description (alt text).</li>
+            <li><strong>Keep a friendly, simple tone.</strong> Write short, clear sentences that any traveller can understand.</li>
+            <li><strong>Protect customer data.</strong> Never share a customer's name, email or travel plans outside the team.</li>
+            <li><strong>Escalate problems early.</strong> Report broken links, wrong information or unhappy customers to the Team Lead the same day.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span>&copy; 2026 TravelBloom. All rights reserved.</span>
+      <span><a href="index.html">Home</a> &middot; <a href="contact.html">Contact Us</a></span>
+    </div>
+  </footer>
+
+  <script src="travel_recommendation.js"></script>
+</body>
+</html>
